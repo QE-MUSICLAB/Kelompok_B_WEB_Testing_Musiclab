@@ -14,9 +14,11 @@ public class EditProfileStudentPage {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
+    @FindBy(xpath = "//div[@class='w-full h-[45rem] flex flex-col items-center justify-center']")
+    private WebElement homepage;
 
-    @FindBy(xpath = "//a[.='Login']")
-    private WebElement btnLogin;
+    @FindBy(css= "[href='/login']")
+    private WebElement clicklogin;
 
     @FindBy(xpath = "//div[@class='flex flex-col  flex-1 w-full h-auto justify-center items-center text-6xl font-bold text-white']")
     private WebElement verifikasiloginpage;
@@ -24,8 +26,10 @@ public class EditProfileStudentPage {
     @FindBy(xpath = "//input[@id='input-username']")
     private WebElement userName;
 
-    @FindBy(xpath = "//div[@class='swal2-container swal2-center swal2-backdrop-show']")
+    @FindBy(css = ".swal2-html-container")
     private WebElement verifikasiloginsucces;
+    @FindBy(css = ".swal2-confirm")
+    private WebElement clickbuttonsucces;
 
     @FindBy(id = "input-password")
     private WebElement password;
@@ -45,7 +49,7 @@ public class EditProfileStudentPage {
     @FindBy(xpath = "//div[@class='w-full min-h-screen']")
     private WebElement alreadystudentprofilepage;
 
-    @FindBy(xpath = "//p[@class='text-md text-black font-poppins cursor-pointer']")
+    @FindBy(css = ".text-black.text-md")
     private WebElement clickbtneditprofile;
     @FindBy(xpath = "//div[@class='flex-1 flex-col ']")
     private WebElement verifikasieditprofilepage;
@@ -73,9 +77,16 @@ public class EditProfileStudentPage {
     @FindBy(xpath = "//div[@class='swal2-popup swal2-modal animate__animated animate__fadeIn animate__faster']")
     private WebElement popupupdatesuccses;
 
+    public boolean setHomepage(){
+        return homepage.isDisplayed();
+    }
+
 
     public void clicklogin(){
-        btnLogin.click();
+        clicklogin.click();
+    }
+    public void clickbtnloginsucces(){
+        clickbuttonsucces.click();
     }
     public void setUserName(String urName){
         userName.sendKeys(urName);
@@ -92,7 +103,7 @@ public class EditProfileStudentPage {
         btnloginsukses.click();
     }
     public boolean verifyloginpage(){
-        return btnLogin.isDisplayed();
+        return verifikasiloginpage.isDisplayed();
     }
     public boolean setVerifikasiloginsucces(){
         return verifikasiloginsucces.isDisplayed();
