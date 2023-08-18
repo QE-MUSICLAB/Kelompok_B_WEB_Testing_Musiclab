@@ -215,6 +215,21 @@ public class EditProfileStudentSteps {
         editProfileStudentPage.setClickbtneditfotoprofile();
         webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
+
+    @When("User input {string}, select {string}, input {string}, input {string} and input {string}")
+    public void userInputSelectInputInputAndInput(String namalgkap, String jeniskelamin, String nomorHP, String mail, String Alamat) {
+        EditProfileStudentPage editProfileStudentPage = new EditProfileStudentPage(webDriver);
+        editProfileStudentPage.setInputNamalengkap(namalgkap);
+        webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        editProfileStudentPage.setInputJenisKelamin(jeniskelamin);
+        webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        editProfileStudentPage.setInputNoHP(nomorHP);
+        webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        editProfileStudentPage.setInputnewemail(mail);
+        webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        editProfileStudentPage.setInputalamat(Alamat);
+        webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+    }
 }
 
 

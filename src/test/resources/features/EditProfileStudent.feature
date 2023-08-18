@@ -18,6 +18,29 @@ Scenario: EditStudentProfile with valid data
   And User click the update button at edit profile student page
   Then User will get the pop up messages
 
+
+  Scenario Outline: EditStudentProfile with random data
+    Given User already on login page
+    And User click login menu on musiclab website
+    Then User already on login page musiclab web
+    And User input "tigorwidodo@gmail.com" as email,input "tigor123" as password and select "Student" as role
+    And User click the login button
+    Then User will get the pop up  message login succes
+    And user click the succes login button
+    And User will direct to  homepage
+    And User click the profile menu on hompage
+    And User already in profile student page
+    And User click edit profile
+    And User Already on edit profile page
+    And User edit foto profile
+    When User input "<namalengkap>", select "<jeniskelamin>", input "<NomorHP>", input "<email>" and input "<alamat>"
+    And User click the update button at edit profile student page
+    Then User will get the pop up messages
+    Examples:
+    |namalengkap|jeniskelamin|NomorHP|email           | alamat      |
+    |Boruto     |Male        |01234  |boruto@gmail.com|konohagure   |
+    |Sarada     |Female      | 09898 |sarada@gmail.com|ciputat      |
+
   Scenario: EditStudentProfile to update pasword with valid data
     Given User already on login page
     And User click login menu on musiclab website
@@ -31,6 +54,7 @@ Scenario: EditStudentProfile with valid data
     And User already in profile student page
     And User click edit profile
     And User Already on edit profile page
+    And User edit foto profile
     When User input "tigor123" as old password, select "tigor1234" as new password , and input "tigor1234" as confirmation password
     And User click the update password button at edit profile student page
     Then User will get the pop up messages update password
@@ -54,6 +78,7 @@ Scenario: EditStudentProfile with valid data
     And User already in profile student page
     And User click edit profile
     And User Already on edit profile page
+    And User edit foto profile
     When User input "tigor123" as old password, select "tigor1234" as new password , and input "tigor1234" as confirmation password
     And User click the update password button at edit profile student page
 
@@ -70,6 +95,7 @@ Scenario: EditStudentProfile with valid data
     And User already in profile student page
     And User click edit profile
     And User Already on edit profile page
+    And User edit foto profile
     When User input "k4irul95" as old password, select "k4irul93" as new password , and input "tigor1234" as confirmation password
     And User click the update password button at edit profile student page
 
@@ -86,6 +112,7 @@ Scenario: EditStudentProfile with valid data
     And User already in profile student page
     And User click edit profile
     And User Already on edit profile page
+    And User edit foto profile
     When User input "<oldpassword>", select "<newpassword>", and input "<confirmationpassword>"
     And User click the update password button at edit profile student page
     Examples:
