@@ -76,6 +76,12 @@ public class EditProfileStudentPage {
     private WebElement clickbtnupdate;
     @FindBy(xpath = "//div[@class='swal2-popup swal2-modal animate__animated animate__fadeIn animate__faster']")
     private WebElement popupupdatesuccses;
+    @FindBy(id = "btn-updatepassword")
+    private WebElement clickbtnupdatepassword;
+    @FindBy(css = ".swal2-html-container")
+    private WebElement popupupdatepassword;
+    @FindBy(xpath = "//button[@class='swal2-confirm swal2-styled swal2-default-outline']")
+    private WebElement clickbtnpopupupdatepassword;
 
     public boolean setHomepage(){
         return homepage.isDisplayed();
@@ -87,6 +93,12 @@ public class EditProfileStudentPage {
     }
     public void clickbtnloginsucces(){
         clickbuttonsucces.click();
+    }
+    public void setClickbtnupdatepassword(){
+        clickbtnupdatepassword.click();
+    }
+    public void setClickbtnpopupupdatepassword(){
+        clickbtnpopupupdatepassword.click();
     }
     public void setUserName(String urName){
         userName.sendKeys(urName);
@@ -111,6 +123,9 @@ public class EditProfileStudentPage {
     public boolean setVerifikasidirecttohomepage(){
         return directtohomepage.isDisplayed();
     }
+    public boolean setVerifikasipopupupdatepassword(){
+        return popupupdatepassword.isDisplayed();
+    }
     public void setClicktbtnprofile(){
         clicktbtnprofile.click();
     }
@@ -122,9 +137,6 @@ public class EditProfileStudentPage {
     }
     public boolean setverifikasieditprofilepage(){
         return verifikasieditprofilepage.isDisplayed();
-    }
-    public void setClickbtneditpoto(){
-        clickbtneditpoto.click();
     }
     public void setInputoldpassword(String InputOldpassword){
         inputoldpassword.sendKeys(InputOldpassword);

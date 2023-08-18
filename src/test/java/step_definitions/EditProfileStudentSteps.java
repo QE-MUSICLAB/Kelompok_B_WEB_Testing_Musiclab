@@ -91,8 +91,9 @@ public class EditProfileStudentSteps {
         editProfileStudentPage.setClickbtneditprofile();
     }
     @And("User Already on edit profile page")
-    public void userAlreadyOnEditProfilePage() {
+    public void userAlreadyOnEditProfilePage() throws InterruptedException {
         EditProfileStudentPage editProfileStudentPage = new EditProfileStudentPage(webDriver);
+        Thread.sleep(4000);
         Assert.assertTrue(editProfileStudentPage.setverifikasieditprofilepage());
     }
 
@@ -121,8 +122,35 @@ public class EditProfileStudentSteps {
         Assert.assertTrue(editProfileStudentPage.setverifikasipopupupdatesukses());
     }
 
+// edit password with valid data
+    @When("User input {string} as old password, select {string} as new password , and input {string} as confirmation password")
+    public void userInputAsOldPasswordSelectAsNewPasswordAndInputAsConfirmationPassword(String Oldpassword, String newPassword, String ConfirmationPassword) {
+        EditProfileStudentPage editProfileStudentPage = new EditProfileStudentPage(webDriver);
+        editProfileStudentPage.setInputoldpassword(Oldpassword);
+        editProfileStudentPage.setInputnewpassword(newPassword);
+        editProfileStudentPage.setInputconfirmationpassword(ConfirmationPassword);
+    }
 
+    @And("User click the update password button at edit profile student page")
+    public void userClickTheUpdatePasswordButtonAtEditProfileStudentPage() throws InterruptedException {
+        EditProfileStudentPage editProfileStudentPage = new EditProfileStudentPage(webDriver);
+        Thread.sleep(4000);
+        editProfileStudentPage.setClickbtnupdatepassword();
+    }
 
+    @Then("User will get the pop up messages update password")
+    public void userWillGetThePopUpMessagesSuccses() throws InterruptedException {
+        EditProfileStudentPage editProfileStudentPage = new EditProfileStudentPage(webDriver);
+        Thread.sleep(4000);
+        Assert.assertTrue(editProfileStudentPage.setVerifikasipopupupdatepassword());
+    }
+
+    @And("user click button popup message update password")
+    public void userClickButtonPopupMessageUpdatePassword() throws InterruptedException {
+        EditProfileStudentPage editProfileStudentPage = new EditProfileStudentPage(webDriver);
+        Thread.sleep(4000);
+        editProfileStudentPage.setClickbtnpopupupdatepassword();
+    }
 }
 
 
