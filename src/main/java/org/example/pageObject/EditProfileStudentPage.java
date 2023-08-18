@@ -49,7 +49,7 @@ public class EditProfileStudentPage {
     @FindBy(xpath = "//div[@class='w-full min-h-screen']")
     private WebElement alreadystudentprofilepage;
 
-    @FindBy(css = ".text-black.text-md")
+    @FindBy(xpath = "//p[@class='text-md text-black font-poppins cursor-pointer']")
     private WebElement clickbtneditprofile;
     @FindBy(xpath = "//div[@class='flex-1 flex-col ']")
     private WebElement verifikasieditprofilepage;
@@ -80,8 +80,21 @@ public class EditProfileStudentPage {
     private WebElement clickbtnupdatepassword;
     @FindBy(css = ".swal2-html-container")
     private WebElement popupupdatepassword;
-    @FindBy(xpath = "//button[@class='swal2-confirm swal2-styled swal2-default-outline']")
+    @FindBy(css = ".swal2-confirm")
     private WebElement clickbtnpopupupdatepassword;
+    @FindBy(xpath = "//div[@class='w-full h-[45rem] flex flex-col items-center justify-center']")
+    private WebElement backtohomepage;
+    @FindBy(xpath = "//ul[@class='menu menu-horizontal px-1 lg:flex hidden']//a[.='Logout']")
+    private WebElement clickbtnlogout;
+    @FindBy(css = ".swal2-html-container")
+    private WebElement popupsuccseslogout;
+    @FindBy(css = ".swal2-confirm")
+    private WebElement clickbtnpopupsuccseslogout;
+    @FindBy(css = ".navbar")
+    private WebElement editprofilpagebeforelogout;
+    @FindBy(xpath = "//div[@class='flex-1 flex-col ']/div[1]//i[@class='fa fa-eye']")
+    private WebElement showpass;
+    public String dir = System.getProperty("user.dir");
 
     public boolean setHomepage(){
         return homepage.isDisplayed();
@@ -99,6 +112,12 @@ public class EditProfileStudentPage {
     }
     public void setClickbtnpopupupdatepassword(){
         clickbtnpopupupdatepassword.click();
+    }
+    public void setClickbtnlogout(){
+        clickbtnlogout.click();
+    }
+    public void setClickbtnpopupsuccseslogout(){
+        clickbtnpopupsuccseslogout.click();
     }
     public void setUserName(String urName){
         userName.sendKeys(urName);
@@ -126,13 +145,25 @@ public class EditProfileStudentPage {
     public boolean setVerifikasipopupupdatepassword(){
         return popupupdatepassword.isDisplayed();
     }
+    public boolean setverifikasipagebeforelogout(){
+        return editprofilpagebeforelogout.isDisplayed();
+    }
+    public boolean setVerifikasibacktohomepage(){
+        return backtohomepage.isDisplayed();
+    }
+    public boolean setverifikasipopupsuccseslogut(){
+        return popupsuccseslogout.isDisplayed();
+    }
     public void setClicktbtnprofile(){
         clicktbtnprofile.click();
     }
     public boolean setUseralreadyprofilepage(){
         return alreadystudentprofilepage.isDisplayed();
     }
-    public void setClickbtneditprofile(){
+    public void setClickbtneditfotoprofile(){
+        clickbtneditpoto.sendKeys(dir+"/Foto/ardi.jpg");
+    }
+    public void clickbutneditprofil(){
         clickbtneditprofile.click();
     }
     public boolean setverifikasieditprofilepage(){
@@ -140,12 +171,15 @@ public class EditProfileStudentPage {
     }
     public void setInputoldpassword(String InputOldpassword){
         inputoldpassword.sendKeys(InputOldpassword);
+        showpass.click();
     }
     public void setInputnewpassword(String InputnewPassword){
         inputnewpassword.sendKeys(InputnewPassword);
+        showpass.click();
     }
     public void setInputconfirmationpassword(String InputConfirmationPassword){
         inputconfirmationpassword.sendKeys(InputConfirmationPassword);
+        showpass.click();
     }
     public void setInputNamalengkap(String InputNamaLengkap){
         inputNamalengkap.sendKeys(InputNamaLengkap);
