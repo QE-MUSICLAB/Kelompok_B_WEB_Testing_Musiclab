@@ -20,8 +20,6 @@ public class EditProfileStudentSteps {
         this.webDriver = Hooks.webDriver;
     }
 
-    EditProfileStudentPage editProfileStudentPage = new EditProfileStudentPage(webDriver);
-
     @Given("User already on login page")
     public void verifyloginPage() {
         EditProfileStudentPage editProfileStudentPage = new EditProfileStudentPage(webDriver);
