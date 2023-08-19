@@ -119,4 +119,5 @@ public class ChatSteps {
         chatPage.setClickbtnbackpage();
         webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
+
 }

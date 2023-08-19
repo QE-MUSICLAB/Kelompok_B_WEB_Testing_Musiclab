@@ -1,5 +1,5 @@
 Feature: edit profile student
-
+@case1
 Scenario: EditStudentProfile with valid data
   Given User already on login page
   And User click login menu on musiclab website
@@ -18,7 +18,7 @@ Scenario: EditStudentProfile with valid data
   And User click the update button at edit profile student page
   Then User will get the pop up messages
 
-
+@case1
   Scenario Outline: EditStudentProfile with random data
     Given User already on login page
     And User click login menu on musiclab website
@@ -40,7 +40,7 @@ Scenario: EditStudentProfile with valid data
     |namalengkap|jeniskelamin|NomorHP|email           | alamat      |
     |Boruto     |Male        |01234  |boruto@gmail.com|konohagure   |
     |Sarada     |Female      | 09898 |sarada@gmail.com|ciputat      |
-
+@case1
   Scenario: EditStudentProfile to update pasword with valid data
     Given User already on login page
     And User click login menu on musiclab website
@@ -64,7 +64,7 @@ Scenario: EditStudentProfile with valid data
     And User will get the pop up messages succes logout
     And User click pop up succes logout button
     Then User already on login page musiclab web
-
+@case1
   Scenario: EditStudentProfile to update pasword with wrog old password
     Given User already on login page
     And User click login menu on musiclab website
@@ -81,7 +81,7 @@ Scenario: EditStudentProfile with valid data
     And User edit foto profile
     When User input "tigor123" as old password, select "tigor1234" as new password , and input "tigor1234" as confirmation password
     And User click the update password button at edit profile student page
-
+@case1
   Scenario: EditStudentProfile to update pasword with not match new password and confirmation password
     Given User already on login page
     And User click login menu on musiclab website
@@ -98,7 +98,7 @@ Scenario: EditStudentProfile with valid data
     And User edit foto profile
     When User input "k4irul95" as old password, select "k4irul93" as new password , and input "tigor1234" as confirmation password
     And User click the update password button at edit profile student page
-
+@case1
   Scenario Outline: EditStudentProfile to update pasword with incomplate data
     Given User already on login page
     And User click login menu on musiclab website
