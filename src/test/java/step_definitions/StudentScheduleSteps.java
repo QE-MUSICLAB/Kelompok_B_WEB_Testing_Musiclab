@@ -19,17 +19,17 @@ public class StudentScheduleSteps {
         this.webDriver = Hooks.webDriver;
     }
     @And("User click jadwal button")
-    public void userclickjadwalbutton() throws InterruptedException {
+    public void userclickjadwalbutton(){
         StudentSchedulePage studentSchedulePage = new StudentSchedulePage(webDriver);
-        Thread.sleep(40000);
         studentSchedulePage.setClickbtnjadwal();
+        webDriver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
     }
 
     @And("User Already jadwal page")
-    public void userAlreadyJadwalPage() throws InterruptedException {
+    public void userAlreadyJadwalPage()  {
         StudentSchedulePage studentSchedulePage = new StudentSchedulePage(webDriver);
-        Thread.sleep(8000);
         Assert.assertTrue(studentSchedulePage.setalreadyjadwalpage());
+        webDriver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 
     }
 
@@ -51,5 +51,6 @@ public class StudentScheduleSteps {
     public void userLogout() {
         StudentSchedulePage studentSchedulePage = new StudentSchedulePage(webDriver);
         studentSchedulePage.setBtnlogout();
+        webDriver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
     }
 }
