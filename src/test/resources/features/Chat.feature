@@ -1,5 +1,8 @@
 Feature: get chat student to mentor, and chat mentor to student with valid data
-@case2
+
+
+
+  @Musiclab @Positivecase
 Scenario: Student user chat to mentor
   Given User already on login page
   And User click login menu on musiclab website
@@ -23,7 +26,10 @@ Scenario: Student user chat to mentor
   And User will get the pop up messages succes logout
   And User click pop up succes logout button
   Then User already on login page musiclab web
-@case3
+
+
+
+  @Musiclab @Positivecase
   Scenario: mentor user chat to student
     Given User already on login page
     And User click login menu on musiclab website

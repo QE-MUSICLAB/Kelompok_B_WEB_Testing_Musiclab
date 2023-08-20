@@ -1,5 +1,8 @@
 Feature: student schedule
-@case4
+
+
+
+  @Musiclab @Positivecase
   Scenario: the user student checks the available study schedule
     Given User already on login page
     And User click login menu on musiclab website
@@ -13,7 +16,10 @@ Feature: student schedule
     And User already in profile student page
     And User click jadwal button
     And User Already jadwal page
-@case5
+
+
+
+  @Musiclab @Positivecase
   Scenario: the user student checks the available kembali button
     Given User already on login page
     And User click login menu on musiclab website

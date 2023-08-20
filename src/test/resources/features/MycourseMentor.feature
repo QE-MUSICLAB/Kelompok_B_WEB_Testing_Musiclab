@@ -1,5 +1,5 @@
 Feature: Mycoursementor
-@case6
+  @Musiclab @Positivecase
   Scenario: mentor user verifies his available course schedule
     Given User already on login page
     And User click login menu on musiclab website
@@ -14,7 +14,7 @@ Feature: Mycoursementor
     When User click kursus saya button
     Then User already on kursus saya mentor page
 
-  @case6
+  @Musiclab @Positivecase
   Scenario: the user verifies that the course selection has appeared on the mentor's profile homepage
     Given User already on login page
     And User click login menu on musiclab website

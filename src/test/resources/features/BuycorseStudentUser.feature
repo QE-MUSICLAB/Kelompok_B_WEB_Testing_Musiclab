@@ -1,7 +1,7 @@
 Feature: student user buy course
 
   # Bug pada case "User already on course mentor page" halaman harus di bantu dengan menekan refresh secara manual
-@case7
+  @Musiclab @Positivecase
   Scenario: Student user buy course with valid data
     Given User already on login page
     And User click login menu on musiclab website
