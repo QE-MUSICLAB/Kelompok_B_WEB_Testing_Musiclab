@@ -7,7 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ChatPage {
     public static WebDriver driver;
-
     public ChatPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;

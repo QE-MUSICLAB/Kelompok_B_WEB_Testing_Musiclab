@@ -70,7 +70,6 @@ public class ChatSteps {
         chatPage.setClicksendchatmentor();
         webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
-
     @And("user click close button")
     public void userClickCloseButton() {
         ChatPage chatPage = new ChatPage(webDriver);

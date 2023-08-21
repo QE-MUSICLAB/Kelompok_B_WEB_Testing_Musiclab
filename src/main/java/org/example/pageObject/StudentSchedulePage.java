@@ -20,7 +20,6 @@ public class StudentSchedulePage {
     private WebElement clickbtnkembali;
     @FindBy(xpath = "//ul[@class='menu menu-horizontal px-1 lg:flex hidden']//a[.='Logout']")
     private WebElement btnlogout;
-
     public void setClickbtnjadwal(){
         clickbtnjadwal.click();
     }

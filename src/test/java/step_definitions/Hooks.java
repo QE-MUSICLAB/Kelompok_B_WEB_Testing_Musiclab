@@ -24,7 +24,6 @@ public class Hooks {
         webDriver.get(URL);
         webDriver.manage().window().maximize();
     }
-
     @After
     public void closeBrowser(){
         webDriver.quit();

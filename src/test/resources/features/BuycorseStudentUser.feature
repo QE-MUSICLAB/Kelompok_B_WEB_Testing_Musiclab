@@ -1,5 +1,4 @@
 Feature: student user buy course
-
   # Bug pada case "User already on course mentor page" halaman harus di bantu dengan menekan refresh secara manual
   @Musiclab @Positivecase
   Scenario: Student user buy course with valid data

@@ -32,14 +32,12 @@ public class StudentScheduleSteps {
         webDriver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 
     }
-
     @When("User click kembali button")
     public void userClickKembaliButton() {
         StudentSchedulePage studentSchedulePage = new StudentSchedulePage(webDriver);
         studentSchedulePage.setClickbtnkembali();
         webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
-
     @Then("User direct to profile page")
     public void userDirectToProfilePage() {
         EditProfileStudentPage editProfileStudentPage = new EditProfileStudentPage(webDriver);

@@ -18,7 +18,6 @@ Feature: student schedule
     And User Already jadwal page
 
 
-
   @Musiclab @Positivecase
   Scenario: the user student checks the available kembali button
     Given User already on login page

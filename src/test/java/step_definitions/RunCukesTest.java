@@ -5,12 +5,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        tags = "@case7",
+        tags = "@Musiclab",
         features = {"classpath:features/"},
         glue = {"classpath:step_definitions"},
         plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"}
 )
-
 
 public class RunCukesTest {
 }

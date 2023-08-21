@@ -85,6 +85,7 @@ public class BuycourseStudentuserPage {
     public boolean setverfikasipopuppayment(){
         return popuppayment.isDisplayed();
     }
+
     public boolean setverifikasicoursementorpage(){
         return verifikasicoursepagementor.isDisplayed();
     }

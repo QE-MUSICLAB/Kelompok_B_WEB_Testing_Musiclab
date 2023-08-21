@@ -14,6 +14,7 @@ Feature: Mycoursementor
     When User click kursus saya button
     Then User already on kursus saya mentor page
 
+
   @Musiclab @Positivecase
   Scenario: the user verifies that the course selection has appeared on the mentor's profile homepage
     Given User already on login page

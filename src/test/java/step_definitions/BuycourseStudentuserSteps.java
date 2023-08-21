@@ -80,7 +80,6 @@ public class BuycourseStudentuserSteps {
         Assert.assertTrue(buycourseStudentuserPage.setverifikasicoursementorpage());
         webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
-
     @When("User input {string} as check availibility, and {string} as pilih hari to make payment")
     public void userInputAsCheckAvailibilityAndAsPilihHariToMakePayment(String tanggal, String plihanhari) {
         BuycourseStudentuserPage buycourseStudentuserPage = new BuycourseStudentuserPage(webDriver);

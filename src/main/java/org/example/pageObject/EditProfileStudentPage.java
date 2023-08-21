@@ -100,7 +100,6 @@ public class EditProfileStudentPage {
         return homepage.isDisplayed();
     }
 
-
     public void clicklogin(){
         clicklogin.click();
     }

@@ -36,7 +36,6 @@ public class MyCourseMentorSteps {
         editProfileStudentPage.setClickbtnlogout();
         webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
-
     @And("User back to home profile click kembali button")
     public void userBackToHomeProfileClickKembaliButton() {
         MyCourseMentorPage myCourseMentorPage = new MyCourseMentorPage(webDriver);

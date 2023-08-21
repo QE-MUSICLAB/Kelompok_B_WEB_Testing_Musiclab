@@ -18,7 +18,6 @@ public class MyCourseMentorPage {
     private WebElement verifikasikursussayapage;
     @FindBy(id = "btn-back")
     private WebElement clickbtnback;
-
     public void setClickbtnkursussaya(){
         clickbtnkursussaya.click();
     }

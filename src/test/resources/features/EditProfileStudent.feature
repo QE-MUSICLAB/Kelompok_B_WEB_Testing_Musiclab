@@ -106,7 +106,6 @@ Scenario: EditStudentProfile with valid data
     When User input "k4irul95" as old password, select "k4irul93" as new password , and input "tigor1234" as confirmation password
     And User click the update password button at edit profile student page
 
-
   @Musiclab @Negativecase
   Scenario Outline: EditStudentProfile to update pasword with incomplate data
     Given User already on login page

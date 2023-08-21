@@ -170,7 +170,6 @@ public class EditProfileStudentSteps {
         Assert.assertTrue(editProfileStudentPage.setVerifikasibacktohomepage());
         webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
-
     @And("user logout account")
     public void userLogoutAccount()  {
         EditProfileStudentPage editProfileStudentPage = new EditProfileStudentPage(webDriver);
