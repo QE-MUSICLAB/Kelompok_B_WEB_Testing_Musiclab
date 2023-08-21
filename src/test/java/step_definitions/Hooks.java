@@ -13,7 +13,6 @@ public class Hooks {
     public static WebDriver webDriver;
 
     @Before
-
     public void openBrowser(){
         ChromeOptions co = new ChromeOptions();
         WebDriverManager.chromedriver().setup();
