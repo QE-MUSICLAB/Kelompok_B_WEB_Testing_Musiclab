@@ -3,7 +3,7 @@
     <br />
     Capstone Program Immersive Alterra Academy
     <br />
-    <a href="https://app.swaggerhub.com/apis-docs/KHARISMAJANUAR/MusicLab-API/1.0.0#/"><strong>| Open API Documentation |</strong></a>
+    <a href="https://music-lab-immersive.netlify.app/"><strong>| Web Musiclab |</strong></a>
     <br />
     <br />
   </p>
