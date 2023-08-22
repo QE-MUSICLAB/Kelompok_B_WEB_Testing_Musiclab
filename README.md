@@ -18,7 +18,7 @@
 <p align="justify">This is WEB Automation Testing Project for [MusicLab](https://music-lab-immersive.netlify.app/). This project was created to complete a Capstone project in the Batch 11 Quality Assurance class at the Alterra Academy Immersive Program. At this project, we perform an WEB Automation Testing for 17 resources or end points (Register, Login, Logout, Edit Profile Student, Jadwal Student, Buying Course, Beri Ulasan, Chat, Lihat Jadwal from Find Mentor, Edit Profile Mentor, Check Jadwal Saya Mentor, Upload & Edit Course, Delete Mentor Course, Tambah & Lihat Jadwal Mentor, Detail Course for Mentor, Delete Account Student, Delete Account Mentor)</p>
 
 ## 📓 Testing Documentation
-[Test Case API](https://docs.google.com/spreadsheets/d/1AVUGRSZwGUWmaXON43yPEXqfQSebuyW3wl9HmGBn2O0/edit#gid=0)
+[Test Case WEB](https://docs.google.com/spreadsheets/d/1AVUGRSZwGUWmaXON43yPEXqfQSebuyW3wl9HmGBn2O0/edit#gid=0)
 
 ## 📝 Reports
 
