@@ -17,7 +17,7 @@ public class MyCourseMentorSteps {
         super();
         this.webDriver = Hooks.webDriver;
     }
-    @When("User click kursus saya button")
+    @When("User click kursuss saya button")
     public void userclickkurussayabutton(){
         MyCourseMentorPage myCourseMentorPage = new MyCourseMentorPage(webDriver);
         myCourseMentorPage.setClickbtnkursussaya();

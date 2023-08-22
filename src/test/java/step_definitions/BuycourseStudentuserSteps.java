@@ -17,7 +17,7 @@ public class BuycourseStudentuserSteps {
         this.webDriver = Hooks.webDriver;
     }
     @And("user clicks find mentor button")
-    public void userclickfindmentorbutton(){
+    public void usercclickfindmentorbutton(){
         BuycourseStudentuserPage buycourseStudentuserPage = new BuycourseStudentuserPage(webDriver);
         buycourseStudentuserPage.setClickbuttonfindmentor();
         webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

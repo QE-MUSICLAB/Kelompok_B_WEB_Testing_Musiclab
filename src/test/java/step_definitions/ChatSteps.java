@@ -15,8 +15,8 @@ public class ChatSteps {
         super();
         this.webDriver = Hooks.webDriver;
     }
-    @And("User click find mentor button")
-    public void userclickfindmentorbutton (){
+    @And("User click find mentors button")
+    public void userclickfindmentorrbutton (){
         ChatPage chatPage = new ChatPage(webDriver);
         chatPage.setClickbtnfindmentor();
         webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);

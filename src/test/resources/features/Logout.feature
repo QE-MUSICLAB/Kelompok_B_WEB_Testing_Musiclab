@@ -1,6 +1,6 @@
-Feature: as a user i want do logout musiclab
+Feature: User want to logout musiclab
 
-  @Logout
+  @Logout @Musiclab @PositiveCase
   Scenario: Logout student with valid data
     Given User already on musiclab website
     When  User click login menu
@@ -13,7 +13,7 @@ Feature: as a user i want do logout musiclab
     When  User click logout button
     Then  User will see pop up message You have been Logged out
 
-  @Logout
+  @Logout @Musiclab @PositiveCase
   Scenario: Logout mentor with valid data
     Given User already on musiclab website
     When  User click login menu

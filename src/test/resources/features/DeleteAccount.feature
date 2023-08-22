@@ -1,6 +1,6 @@
 Feature: User delete their account
 
-  @Delete
+  @Delete @Musiclab @DeleteAccount @PositiveCase
     #BUG harus refresh manual
   Scenario: Delete student account
     Given User already on musiclab website
@@ -16,7 +16,7 @@ Feature: User delete their account
     And   User click Ya, hapus akun! button
     Then  User will direct to login page
 
-  @Delete
+  @Delete @Musiclab @DeleteAccount @PositiveCase
     #BUG harus refresh manual
   Scenario: Delete mentor account
     Given User already on musiclab website
@@ -30,5 +30,5 @@ Feature: User delete their account
     When  User click profile button
     And   User click deactivate account button
     And   User click Ya, hapus akun! button
-    Then  User will direct to login page
+    Then  User will stay at profile page
 

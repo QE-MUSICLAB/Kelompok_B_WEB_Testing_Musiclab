@@ -15,7 +15,7 @@ public class SearchAndFilterSteps {
     }
 
     @And("User click find mentor button")
-    public void userClickFindMentorButton() {
+    public void userClickFindMentorButtonn() {
         SearchAndFilterPage searchAndFilterPage = new SearchAndFilterPage(webDriver);
         searchAndFilterPage.setFindMentorButton();
     }

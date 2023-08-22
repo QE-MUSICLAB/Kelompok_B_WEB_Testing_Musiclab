@@ -1,7 +1,7 @@
-Feature: as a user i want to login musiclab
+Feature: User want to login musiclab
 
 
-  @Login
+  @Login @Musiclab @PositiveCase
   Scenario: Login student with valid data
     Given User already on musiclab website
     When  User click login menu
@@ -11,7 +11,7 @@ Feature: as a user i want to login musiclab
     Then  User will see pop up message login success
     And   User will direct to homepage
 
-  @Login
+  @Login @Musiclab @NegativeCase
   Scenario: Login student with unregistered data
     Given User already on musiclab website
     When  User click login menu
@@ -20,7 +20,7 @@ Feature: as a user i want to login musiclab
     And   User click login button
     Then  User will see pop up message data not found
 
-  @Login
+  @Login @Musiclab @NegativeCase
   Scenario: Login student with deleted account
     #BUG SHOULD CANT LOGIN
     Given User already on musiclab website
@@ -30,7 +30,7 @@ Feature: as a user i want to login musiclab
     And   User click login button
     Then  User will see pop up message data not found
 
-  @Login
+  @Login @Musiclab @PositiveCase
   Scenario: Login mentor with valid data
     Given User already on musiclab website
     When  User click login menu
@@ -40,7 +40,7 @@ Feature: as a user i want to login musiclab
     Then  User will see pop up message login success
     And   User will direct to homepage
 
-  @Login
+  @Login @Musiclab @NegativeCase
     Scenario: Login mentor with unregistered data
     Given User already on musiclab website
     When  User click login menu
@@ -49,12 +49,12 @@ Feature: as a user i want to login musiclab
     And   User click login button
     Then  User will see pop up message data not found
 
-        @Login
-  Scenario: Login student with deleted account
+  @Login @Musiclab @NegativeCase
+  Scenario: Login mentor with deleted account
     #BUG SHOULD CANT LOGIN
     Given User already on musiclab website
     When  User click login menu
     Then  User already in login page
-    And   User input "zakynababan@gmail.com" as email,and input "zaky1234" as password, and select "Mentor" as role
+    And   User input "wahidthorir@gmail.com" as email,and input "wahid123" as password, and select "Mentor" as role
     And   User click login button
     Then  User will see pop up message data not found

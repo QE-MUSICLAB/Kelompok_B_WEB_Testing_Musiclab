@@ -18,7 +18,7 @@ public class StudentScheduleSteps {
         super();
         this.webDriver = Hooks.webDriver;
     }
-    @And("User click jadwal button")
+    @And("User click jadwal buttons")
     public void userclickjadwalbutton(){
         StudentSchedulePage studentSchedulePage = new StudentSchedulePage(webDriver);
         studentSchedulePage.setClickbtnjadwal();

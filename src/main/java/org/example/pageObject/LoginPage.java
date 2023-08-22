@@ -26,7 +26,7 @@ public class LoginPage {
     private WebElement password;
     @FindBy(xpath = "//select[@id='select-role']")
     private WebElement selectRole;
-    @FindBy(css = ".swal2-confirm")
+    @FindBy(xpath = "//h2[@class='swal2-title']")
     private WebElement dataNotFoundPopUp;
 
 

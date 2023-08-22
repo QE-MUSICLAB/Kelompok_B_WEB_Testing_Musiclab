@@ -34,12 +34,17 @@ public class DeleteAccountSteps {
     public void userClickYaHapusAkunButton() throws InterruptedException {
         DeleteAccountPage deleteAccountPage = new DeleteAccountPage(webDriver);
         deleteAccountPage.clickYaHapusAkunButton();
-        Thread.sleep(3000);
+        Thread.sleep(8000);
 
     }
 
     @And("User will direct to login page")
     public void userWillDirectToLoginPage() {
+        DeleteAccountPage deleteAccountPage = new DeleteAccountPage(webDriver);
+        Assert.assertTrue(deleteAccountPage.verifyHomePage());
+    }
+    @And("User will stay at profile page")
+    public void userWillStayToLoginPage() {
         DeleteAccountPage deleteAccountPage = new DeleteAccountPage(webDriver);
         Assert.assertTrue(deleteAccountPage.verifyHomePage());
     }

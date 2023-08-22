@@ -17,7 +17,7 @@ public class ChatPage {
     public WebElement useralreadyfindmentorpage;
     @FindBy(xpath = "//input[@id='search']")
     public WebElement usersearchementor;
-    @FindBy(css = "[src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png']")
+    @FindBy(xpath = "//img[@src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png']")
     public WebElement clickmentorselected;
     @FindBy(css = ".container")
     public WebElement useralreadypagementor;
